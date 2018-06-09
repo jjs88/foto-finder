@@ -1,0 +1,182 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  font-weight: 800;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo {
+  width: 25px;
+  height: 25px;
+}
+
+#myFile {
+  display: none;
+}
+
+.title {
+
+}
+
+.btn {
+  background-color: #5b4447;
+  border: 0;
+  color: #ffffff;
+  font-weight: 800;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.top-section {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column; 
+  width: 320px;
+}
+
+.action-btns {
+  margin-top:15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-section {
+  background-color: #3e2a35;
+}
+
+label[for='caption'] {
+  margin-top: 15px;
+}
+
+label[for='title'],
+label[for='caption']
+ {
+  color: #938284;
+  padding-bottom: 10px;
+}
+
+.bottom-section {
+  background-color: #c2b2b4;
+  width:100%;
+}
+
+.foto {
+  border: 2px solid #938284;
+  width: 310px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: 1s popIn;
+}
+
+.foto__img {
+  width: 100%;
+}
+
+.foto-icons {
+  background-color:#5b4447;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foto__text {
+  background-color: #ffffff;
+  color: #3e2a35; 
+  padding: 10px;
+  font-size: 160%;
+  margin: 0;
+}
+
+.delete, .favorite {
+  width:25px;
+  height:25px;
+  padding: 10px;
+}
+
+.delete:hover {
+  content: url('delete-active.svg');
+}
+
+.no-photos {
+  text-align: center;
+}
+
+
+@media (min-width: 600px) {
+  .inputs {
+    width: 520px;
+  }
+
+  .title {
+    font-size: 300%;
+  }
+
+  .logo {
+    width:40px;
+    height: 40px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .foto {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .fotos {
+    width: 1024px;
+  } 
+}
+
+
+@keyframes popIn {
+  0%{
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
